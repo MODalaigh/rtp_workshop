@@ -1,5 +1,4 @@
-n
-ame: RTP Docker push (dev)
+name: RTP Docker push (dev)
 # This builds the docker image and pushes it to DockerHub
 # Runs on push events to 'dev', including PRs.
 on:
