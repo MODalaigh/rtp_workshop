@@ -5,3 +5,4 @@ fastqc/
 .nextflow/
 .nextflow.*
 multiqc/
+dummy_files/
