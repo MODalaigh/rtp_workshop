@@ -6,3 +6,4 @@ fastqc/
 .nextflow.*
 multiqc/
 dummy_files/
+test.nf

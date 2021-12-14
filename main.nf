@@ -16,13 +16,12 @@ if(has_extension(params.input, ".csv")){
 // stage input data
 ( ch_qc_reads, ch_raw_reads) = ch_input.into(2)
 
-ch_raw_reads.view()
 
 process FASTQC{
     publishDir "./fastqc", mode: 'copy'
 
     input:
-    tuple val(base), file(reads) from ch_reads
+    tuple val(base), file(reads) from ch_qc_reads
 
     output:
     file("*.{html,zip}") into ch_multiqc
